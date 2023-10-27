@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 
-import 'weather_model.dart';
+part 'weather_model.dart';
 
 class WeatherController {
   void getData() async {
@@ -15,7 +15,7 @@ class WeatherController {
         break;
       }
       var response = await Dio().get(
-        "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=509dc5d730ff2dd6003b22f30ae93313",
+        "https://api.openweathermap.org/data/2.5/weather?q=cairo&appid=509dc5d730ff2dd6003b22f30ae93313",
       );
 
       AllWeatherData model = AllWeatherData.fromJson(response.data);

@@ -1,11 +1,14 @@
-// import 'package:dart_with_api/movie/movie_controller.dart';
 
-import 'weather/weather_controller.dart';
 
-void main(){
-  WeatherController weather = WeatherController();
+import 'login/login_controller.dart';
 
-  weather.getData();
-/*   MoviesController movie = MoviesController();
-  movie.getDataOfMovie(); */
+// import 'weather/weather_controller.dart';
+
+void main() {
+  LoginController controller = LoginController();
+  controller.loginUser();
 }
+
+
+//966132847241864
+//123456789

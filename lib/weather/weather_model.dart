@@ -1,3 +1,6 @@
+part of 'weather_controller.dart';
+
+
 class AllWeatherData {
  
   late final Coord coord;
