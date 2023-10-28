@@ -1,14 +1,14 @@
+// import 'login/login_controller.dart';
 
-
-import 'login/login_controller.dart';
-
-// import 'weather/weather_controller.dart';
+import 'register/register_controller.dart';
 
 void main() {
-  LoginController controller = LoginController();
-  controller.loginUser();
+  RegisterController controller = RegisterController();
+  controller.registerUser();
+  // LoginController lcontroller = LoginController();
+  // lcontroller.loginUser();
 }
-
-
-//966132847241864
-//123456789
+//phone=>
+//01011505802
+//password =>
+//0105058

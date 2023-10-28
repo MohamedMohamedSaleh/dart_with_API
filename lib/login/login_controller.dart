@@ -1,4 +1,4 @@
- import 'dart:io';
+import 'dart:io';
 
 import 'package:dio/dio.dart';
 
@@ -19,9 +19,11 @@ class LoginController {
           "user_type": "client",
         },
       );
+      print("Login successful, Enjoy your time.");
+      print("This is your data =>");
       print(postData.data);
-    } on DioException catch (ex) {
-      print(ex.message);
+    } on DioException catch (_) {
+      print("Invalid account!");
     }
   }
 }
